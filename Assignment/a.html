@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html> 
+    <head>
+        <title>MemoryZone</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <script src="JS/jQuery.js"></script>
+        <script src="JS/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="public/CSS/Css.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+ 
+    </head>
+    <body style="margin-left: 10px;margin-right: 10px; background-color: #0babff">
+
+        <div  style="background-color: #ededed;margin: 50px 20px 50px 20px; border: 1px #ffffff solid;border-radius: 25px ;  box-shadow: 0 4px 8px 0 rgba(160, 119, 119, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
+            <div class="row">
+            <div class="col-8">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                              <li data-target="#demo" data-slide-to="0" class="active"></li>
+                              <li data-target="#demo" data-slide-to="1"></li>
+                              <li data-target="#demo" data-slide-to="2"></li>
+                            </ul>
+                          
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="Images/1.jpg" style="border-radius: 25px" alt="Los Angeles">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="Images/2.jpg" style="border-radius: 25px" alt="Chicago">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="Images/3.png" style="border-radius: 25px" alt="New York">
+                              </div>
+                            </div>
+                          
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                          
+                          </div>
+            </div>
+            <div class="col-4" >
+                <div style="text-align: center; font-size: 20pt;color: #016eff;font-weight: bold" >MemoryZone</div>
+                <div style="margin: 10px 30px 30px 30px; background-color: #0babff; border:1px #016eff solid; border-radius: 25px;box-shadow: 0 4px 8px 0 rgba(160, 119, 119, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    
+                <div class="container h-100">
+                            <div class="d-flex justify-content-center h-100">
+                                <div class="user_card">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="brand_logo_container">
+                                            <img src="Images/icon.png" width="200px" height="200px" class="brand_logo" alt="Logo">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center form_container">
+                                        <form>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                </div>
+                                                <input type="text" name="" class="form-control input_user" value="" placeholder="Username">
+                                            </div>
+                                            <div class="input-group mb-2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                                </div>
+                                                <input type="password" name="" class="form-control input_pass" value="" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                                    <label class="custom-control-label" for="customControlInline">Remember me</label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="d-flex justify-content-center mt-3 login_container">
+                                        <a href="#">
+                                        <button type="button" name="button" class="btn login_btn" style="width: 250px; background-color: #ffffff">Login</button>
+                                    </a>
+                                    </div>
+                                    <div class="mt-4">
+                                        <div class="d-flex justify-content-center links">
+                                            Don't have an account? <a href="#" class="ml-2" style="font-weight: bold" data-toggle="modal" data-target="#myModal">Sign Up</a>
+                                        </div>
+                                        <div class="d-flex justify-content-center links">
+                                            <a href="#" style="font-weight: bold">Forgot your password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        </div>
+        </div>
+		
+		
+		
+		
+		<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content" style="width:600px">
+
+     <form class="form-horizontal" role="form" method="POST" action="/register">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h2>Register New User</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 30px">
+            <div class="col-md-3 field-label-responsive">
+                <label for="name">Name</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
+                        <input type="text" name="name" class="form-control" id="name"
+                               placeholder="Your Name" required autofocus>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+        <div class="row" style="margin-left: 30px">
+            <div class="col-md-3 field-label-responsive">
+                <label for="email">E-Mail Address</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                        <input type="text" name="email" class="form-control" id="email"
+                               placeholder="you@example.com" required autofocus>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-control-feedback">
+                        <span class="text-danger align-middle">
+                            <!-- Put e-mail validation error messages here -->
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 30px">
+            <div class="col-md-3 field-label-responsive">
+                <label for="password">Password</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group has-danger">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                        <input type="password" name="password" class="form-control" id="password"
+                               placeholder="Password" required>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row" style="margin-left: 30px">
+            <div class="col-md-3 field-label-responsive">
+                <label for="password">Confirm Password</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon" style="width: 2.6rem">
+                            <i class="fa fa-repeat"></i>
+                        </div>
+                        <input type="password" name="password-confirmation" class="form-control"
+                               id="password-confirm" placeholder="Password" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 30px">
+            <div class="col-md-3"></div>
+            <div class="col-md-6" style="margin-left: 50px; margin-bottom: 10px" > 
+                <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Register</button>
+            </div>
+        </div>
+    </form>
+
+    </div>
+  </div>
+</div>
+		
+    </body>
+    
+</html>

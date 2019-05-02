@@ -1,0 +1,41 @@
+<div style="background-color: #0baafe">
+      <div class="row">
+        <div class="col-md-8 offset-md-2" style="margin-top: 25px;padding:20px;">
+<h3><a class="btn btn-primary" style=" " href="/employee"><i class="fa fa-plus"></i> Create New</a> Customer List</h3>
+<table class="table table-striped" style="background-color: white">
+    <thead style="background-color: #36304a; color: aliceblue;border: 0.1px solid #36304a;border-radius: 10px">
+        <tr>
+            <th>
+                Full Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Mobile
+            </th>
+            <th>
+                City
+            </th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.fullName}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.mobile}}</td>
+            <td>{{this.city}}</td>
+            <td>
+                <a href="/{{this._id}}" class="btn btn-info"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/delete/{{this._id}}" class="btn btn-warning" onclick="return confirm ('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each }}
+    </tbody>
+</table>
+</div>
+</div>
+</div>
+ 
